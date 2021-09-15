@@ -1,0 +1,19 @@
+.fuelDiv {
+  border: solid 1px lightgrey;
+  width: 30%;
+}
+
+.fuelHeadingz {
+  margin-left: 20px;
+  color: #555774;
+}
+
+.fuelPz {
+  color: grey;
+  margin-left: 20px;
+}
+
+.fuelHr {
+  width: 90%;
+  background-color: lightgrey;
+}
