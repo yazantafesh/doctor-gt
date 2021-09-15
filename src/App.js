@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Status from './components/Status';
+import Condition from './components/Condition';
+import FuelCost from './components/FuelCost';
+import Buttons from './components/Buttons';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export default function App() {
+  const [active, setActive] = useState('status');
 
-export default App;
+  const changeActive = (param) => {
+    setActive(param);
+  }
+
+  return (
+    <>
+      <Buttons changeActive={changeActive} />
+      <div className='divApp'>
+        {active == 'status' &&
+          <Status />
+        }
+        {active == 'condition' &&
+          <Condition />
+        }
+        {active == 'cost' &&
+          <FuelCost />
+        }
+      </div>
+    </>
+
+  )
+}

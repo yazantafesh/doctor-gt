@@ -1,0 +1,35 @@
+.percentage{
+  font-size: 20px !important;
+  font-weight: bold !important;
+  margin-top: 10px !important;
+}
+
+.donut{
+  margin-top: 10px;
+}
+
+.horizontalLine{
+  width: 85%;
+  background-color: lightgray;
+  margin-top: 20px;
+}
+
+.nums{
+  font-weight: bold !important;
+  font-size: 22px !important;
+  margin-top: 10px !important;
+  color: #555774 !important
+}
+
+.div{
+  padding-right: 0.5%;
+  border: solid 1px lightgrey;
+  width: 30%;
+  height: 400;
+  display: inline-block;
+}
+
+.heading{
+  margin-left: 20px;
+  color: #555774;
+}
