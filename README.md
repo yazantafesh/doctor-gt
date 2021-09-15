@@ -11,3 +11,7 @@
 ## Done By
 
 Yazan Jamal Tafesh
+
+## Deployed Link
+
+https://doctor-gt-assignment.netlify.app/
